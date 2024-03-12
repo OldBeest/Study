@@ -25,7 +25,7 @@ def main_screen():
         elif menu_choice == 2:
             shuffle_deck(card_deck)
         elif menu_choice == 3:
-            global check_first_deck
+            global check_first_deck # global
             if check_first_deck:
                 draw, rest = draw_card(card_deck)
                 check_first_deck = False
@@ -68,7 +68,7 @@ def show_card(draw, rest):
     
 # 5. when card deck is empty, remake new card deck 
 def check_regame(draw, rest):
-    global check_first_deck
+    global check_first_deck # global
     if len(rest) == 0:
         regame_ch = input('카드가 모두 소진 되었습니다. 새 카드 덱을 만드시겠습니까? >>')
         print('마지막 뽑은 카드', draw)
