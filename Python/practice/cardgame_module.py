@@ -70,7 +70,7 @@ def show_card(draw, rest):
 def check_regame(draw, rest):
     global check_first_deck # global
     if len(rest) == 0:
-        regame_ch = input('카드가 모두 소진 되었습니다. 새 카드 덱을 만드시겠습니까? >>')
+        regame_ch = input('카드가 모두 소진 되었습니다. 새 카드 덱을 만드시겠습니까?(y) >>')
         print('마지막 뽑은 카드', draw)
         if regame_ch == 'y':
             make_deck(card_deck)
