@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        main, section, article, div{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        main{
+            max-width: 600px;
+            margin: 0 auto;/*상하는 0, 좌우는 알아서*/
+            background-color: yellow;
+        }
+        section{
+            background-color: violet;
+            position: relative;
+        }
+        article{
+            background-color: cyan;
+        }
+        div{
+            background-color: white;
+        }
+        div.relative{
+            position: relative;
+            /* bottom: 100px; */
+            right: 20px;
+            top: -150px;
+            z-index: 1; /*높을수록 앞으로 나옴*/
+        }
+        div.absolute{
+            position: absolute;
+            background-color: gray;
+            top: 0px;
+            left: 0px;
+            z-index: 5;
+        }
+        div.fixed{
+            position: fixed;
+            background-color: blue;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 50%;
+        }
+        div.sticky{
+            position: sticky;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        main
+        <section>
+            section
+            <article>
+                article
+                <div>static</div><!--기본 값-->
+                <div class="relative">relative</div>
+                <div class="absolute">absolute</div>
+                <div class="fixed">fixed</div>
+                <div class="sticky">sticky</div>
+                <div style="height: 1000px;"></div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

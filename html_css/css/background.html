@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .red{
+            background-color: red;
+            width: 120px;
+            height: 120px;
+        }
+        .image{
+            background-image: url('../assets/pattern_resize.jpg');
+            width: 200px;
+            height: 400px;
+            border: 1px solid black;
+            background-repeat: repeat;
+            background-position: top right;
+            display: inline-block;
+            overflow: scroll;
+        }
+        .attachment-scroll{
+            background-attachment: scroll;
+        }
+        .attachment-fixed{
+            background-attachment: fixed;
+        }
+        .attachment-local{
+            background-attachment: local;
+        }
+        .background-size{
+            width: 600px;
+            height: 300px;
+            background-image: url('../assets/icecream.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid black;
+        }
+        .linear-gradient{
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            background: linear-gradient(45deg,red 30%, blue 50%, yellow 100%)
+        }
+        .radial-gradient{
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            background: radial-gradient(circle at 10% 50%, white, blue)
+        }
+    </style>
+</head>
+<body>
+    <h3>Background color</h3>
+    <div class="red"></div>
+    <h3>Background image</h3>
+    <div class="image attachment-scroll">
+        <h4>scroll</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet praesentium assumenda officia odit distinctio, minima quos perspiciatis ipsa quidem molestias et culpa nostrum aperiam fugiat numquam veritatis? Temporibus!
+        Qui eum mollitia cupiditate illum! Rem incidunt eaque voluptatum perferendis optio quisquam mollitia ullam fugit dolorum corrupti voluptatem, nisi nulla qui est, esse tempore illo cumque beatae dolorem? Ullam, distinctio.
+        Cumque esse enim similique ipsam ullam porro at minus accusamus labore perspiciatis. Laborum dolorum optio, dicta ducimus architecto in mollitia, a amet sequi consequatur ea dolore tempora accusamus fuga. Doloribus.
+        Illo, facilis qui deleniti dicta aspernatur hic quo quasi doloribus, accusantium repudiandae ut veritatis ab, voluptates optio perferendis modi numquam repellendus. Omnis ad voluptates et perferendis, suscipit ipsum sint fuga!
+        A, necessitatibus. Labore ab perferendis consequuntur officiis ducimus inventore voluptatem dicta, quam incidunt! Qui, cupiditate asperiores magni veniam laborum laboriosam aspernatur maiores soluta voluptate, dolores, explicabo molestias fugit optio facilis.
+        Aperiam, eligendi quisquam molestias dolorum nesciunt expedita minus enim facere sint soluta accusantium ipsam aut nostrum reiciendis a magnam quibusdam impedit non assumenda saepe itaque consequuntur ipsum repellat. Repudiandae, reprehenderit.
+        Suscipit illo, voluptate obcaecati dolorem quos amet ullam non, explicabo fugit optio dolores asperiores nihil doloribus mollitia dolor aliquid tempore facere ab quisquam delectus quidem sapiente, dolore porro? Harum, assumenda?
+        Mollitia eum iure ut placeat maiores earum consectetur, ratione id sunt dolore, reprehenderit perspiciatis quidem qui ullam necessitatibus debitis amet enim dolores expedita iusto similique. Sed dicta neque veniam consequuntur.
+    </div>
+        
+    <div class="image attachment-fixed">
+        <h4>fixed</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet praesentium assumenda officia odit distinctio, minima quos perspiciatis ipsa quidem molestias et culpa nostrum aperiam fugiat numquam veritatis? Temporibus!
+        Qui eum mollitia cupiditate illum! Rem incidunt eaque voluptatum perferendis optio quisquam mollitia ullam fugit dolorum corrupti voluptatem, nisi nulla qui est, esse tempore illo cumque beatae dolorem? Ullam, distinctio.
+        Cumque esse enim similique ipsam ullam porro at minus accusamus labore perspiciatis. Laborum dolorum optio, dicta ducimus architecto in mollitia, a amet sequi consequatur ea dolore tempora accusamus fuga. Doloribus.
+        Illo, facilis qui deleniti dicta aspernatur hic quo quasi doloribus, accusantium repudiandae ut veritatis ab, voluptates optio perferendis modi numquam repellendus. Omnis ad voluptates et perferendis, suscipit ipsum sint fuga!
+        A, necessitatibus. Labore ab perferendis consequuntur officiis ducimus inventore voluptatem dicta, quam incidunt! Qui, cupiditate asperiores magni veniam laborum laboriosam aspernatur maiores soluta voluptate, dolores, explicabo molestias fugit optio facilis.
+        Aperiam, eligendi quisquam molestias dolorum nesciunt expedita minus enim facere sint soluta accusantium ipsam aut nostrum reiciendis a magnam quibusdam impedit non assumenda saepe itaque consequuntur ipsum repellat. Repudiandae, reprehenderit.
+        Suscipit illo, voluptate obcaecati dolorem quos amet ullam non, explicabo fugit optio dolores asperiores nihil doloribus mollitia dolor aliquid tempore facere ab quisquam delectus quidem sapiente, dolore porro? Harum, assumenda?
+        Mollitia eum iure ut placeat maiores earum consectetur, ratione id sunt dolore, reprehenderit perspiciatis quidem qui ullam necessitatibus debitis amet enim dolores expedita iusto similique. Sed dicta neque veniam consequuntur.
+    </div>
+        
+    <div class="image attachment-local">
+        <h4>local</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet praesentium assumenda officia odit distinctio, minima quos perspiciatis ipsa quidem molestias et culpa nostrum aperiam fugiat numquam veritatis? Temporibus!
+        Qui eum mollitia cupiditate illum! Rem incidunt eaque voluptatum perferendis optio quisquam mollitia ullam fugit dolorum corrupti voluptatem, nisi nulla qui est, esse tempore illo cumque beatae dolorem? Ullam, distinctio.
+        Cumque esse enim similique ipsam ullam porro at minus accusamus labore perspiciatis. Laborum dolorum optio, dicta ducimus architecto in mollitia, a amet sequi consequatur ea dolore tempora accusamus fuga. Doloribus.
+        Illo, facilis qui deleniti dicta aspernatur hic quo quasi doloribus, accusantium repudiandae ut veritatis ab, voluptates optio perferendis modi numquam repellendus. Omnis ad voluptates et perferendis, suscipit ipsum sint fuga!
+        A, necessitatibus. Labore ab perferendis consequuntur officiis ducimus inventore voluptatem dicta, quam incidunt! Qui, cupiditate asperiores magni veniam laborum laboriosam aspernatur maiores soluta voluptate, dolores, explicabo molestias fugit optio facilis.
+        Aperiam, eligendi quisquam molestias dolorum nesciunt expedita minus enim facere sint soluta accusantium ipsam aut nostrum reiciendis a magnam quibusdam impedit non assumenda saepe itaque consequuntur ipsum repellat. Repudiandae, reprehenderit.
+        Suscipit illo, voluptate obcaecati dolorem quos amet ullam non, explicabo fugit optio dolores asperiores nihil doloribus mollitia dolor aliquid tempore facere ab quisquam delectus quidem sapiente, dolore porro? Harum, assumenda?
+        Mollitia eum iure ut placeat maiores earum consectetur, ratione id sunt dolore, reprehenderit perspiciatis quidem qui ullam necessitatibus debitis amet enim dolores expedita iusto similique. Sed dicta neque veniam consequuntur.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red;"></div>
+</body>
+</html>
